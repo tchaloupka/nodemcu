@@ -16,6 +16,7 @@ Usefull references:
 | Directory | Description                                        |
 | --------- | ---------------------------------------------------|
 |    dht    | Simple temperature and humidity sensor using DHT22 |
+|  button   | Simple event sending based on button state change  |
 
 # Flashing firmware
 * generate the firmware selecting required modules

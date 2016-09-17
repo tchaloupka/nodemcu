@@ -17,6 +17,7 @@ Usefull references:
 | --------- | ---------------------------------------------------|
 |    dht    | Simple temperature and humidity sensor using DHT22 |
 |  button   | Simple event sending based on button state change  |
+|   relay   | Relay controlled by web requests                   |
 
 # Flashing firmware
 * generate the firmware selecting required modules

@@ -1,0 +1,27 @@
+print("*** settings.lua ***")
+
+-- Set to 1 if deepsleep is required - don't forget to connect RST and D0 pins
+deep_sleep = 1
+
+-- URI used to send data to
+server_uri = 'https://things.ubidots.com/api/v1.6/devices/<devicename>/?token=<token>'
+
+-- DHT data pin
+dhtPin = 5
+
+--- WIFI ---
+wifi_SSID = "YourSSID"
+wifi_password = "your password"
+-- wifi.PHYMODE_B 802.11b, More range, Low Transfer rate, More current draw
+-- wifi.PHYMODE_G 802.11g, Medium range, Medium transfer rate, Medium current draw
+-- wifi.PHYMODE_N 802.11n, Least range, Fast transfer rate, Least current draw
+wifi_signal_mode = wifi.PHYMODE_N
+-- If the settings below are filled out then the module connects
+-- using a static ip address which is faster than DHCP and
+-- better for battery life. Blank "" will use DHCP.
+client_ip=""
+client_netmask=""
+client_gateway=""
+
+-- How often is sensor value read - in milliseconds
+time_between_sensor_readings = 5000

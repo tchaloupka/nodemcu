@@ -4,6 +4,8 @@ Remote relay
 This project is meant to set relay On/Off as requested through the provided REST API.
 It contains wery simple HTTP request handler.
 
+[demonstrating video](https://youtu.be/GkD70_dfdc0)
+
 To turn the relay on or off it is needed to call this HTTP request:
 
 ```

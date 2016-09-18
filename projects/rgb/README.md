@@ -27,3 +27,4 @@ curl http://<node-ip-address>/api/color
 # Notes
 * Shield uses pin 2 to control the LED but NodeMCU uses pin 4. So it's needed to reroute it.
 
+![schema](https://github.com/tchaloupka/nodemcu/blob/master/images/rgb.png?raw=true)

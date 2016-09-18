@@ -6,6 +6,8 @@ It contains wery simple HTTP request handler.
 
 It is possible to enable animation between colors (using `animate` and `step` settings)
 
+[video demonstration](https://youtu.be/dDKcRLUc7kA)
+
 To set the color it is needed to call this HTTP request:
 
 ```

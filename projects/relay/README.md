@@ -21,7 +21,10 @@ curl http://<node-ip-address>/api/relay
 |----|-----------|
 |[D1 mini](http://www.wemos.cc/Products/d1_mini.html)|Wemos D1 mini|
 |[relay](http://www.wemos.cc/Products/relay_shield_v2.html)|relay shield v2|
+|220R|resistor|
+|led|some LED to test with|
 
 # Notes
 * shield uses pin 1 to control relay
 
+![schema](https://github.com/tchaloupka/nodemcu/blob/master/images/relay.png?raw=true)

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select color</title>
+</head>
+<body>
+
+
+<script src="https://github.com/EastDesire/jscolor/raw/master/jscolor.min.js"></script>
+
+<p>Rectangle color:
+<input class="jscolor" onchange="update(this.jscolor)" value="000000">
+
+<p id="rect" style="border:1px solid gray; width:161px; height:100px;">
+
+<script>
+function update(jscolor) {
+    document.getElementById('rect').style.backgroundColor = '#' + jscolor;
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "api/color", true);
+    xhttp.setRequestHeader("Content-Type", "application/json");
+    xhttp.send(JSON.stringify({r:Math.floor(jscolor.rgb[0]), g:Math.floor(jscolor.rgb[1]), b:Math.floor(jscolor.rgb[2])}));
+}
+</script>
+
+</body>
+</html>

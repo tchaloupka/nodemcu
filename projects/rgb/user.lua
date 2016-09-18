@@ -69,7 +69,11 @@ function setupListener()
                         setColor(cjson.decode(req["MSGBODY"]))
                         c:send("HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Type: application/json\r\nConnection: close\r\n\r\n"..getColor())
                     elseif (req["METHOD"] == "GET" and req["REQUEST"] == "/api/color") then
-                        c:send("HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Type: application/json\r\nConnection: close\r\n\r\n"..getColor())
+                        c:send("HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nConnection: close\r\n\r\n"..getColor())
+                    elseif (req["METHOD"] == "GET" and (req["REQUEST"] == "/" or req["REQUEST"] == "/index.html")) then
+                        file.open("index.html")
+                        c:send("HTTP/1.1 200 OK\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n"..file.read())
+                        file.close()
                     else
                         c:send("HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nConnection: close\r\n\nCall POST request to /api/color with set=on or set=off as data")
                     end

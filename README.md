@@ -13,12 +13,13 @@ Usefull references:
 * [NodeMCU documentation](https://nodemcu.readthedocs.io/en/master/)
 
 # Projects:
-| Directory | Description                                        |
-| --------- | ---------------------------------------------------|
-|    dht    | Simple temperature and humidity sensor using DHT22 |
-|  button   | Simple event sending based on button state change  |
-|   relay   | Relay controlled by web requests                   |
-|    rgb    | RGB LED controlled by web requests                 |
+| Directory | Description                                         |
+| --------- | ----------------------------------------------------|
+|    dht    | Simple temperature and humidity sensor using DHT22  |
+|  button   | Simple event sending based on button state change   |
+|   relay   | Relay controlled by web requests                    |
+|    rgb    | RGB LED controlled by web requests                  |
+|  bmp180   | Simple temperature and pressure sensor using BMP180 |
 
 # Flashing firmware
 * generate the firmware selecting required modules

@@ -46,6 +46,52 @@ NodeMCU custom build by frightanic.com
  build 	built on: 2016-08-20 10:54
  powered by Lua 5.1.4 on SDK 1.5.4.1(39cb9a32)
 ```
+# WeMos shields pinouts
+## Relay Shield
+|Pin|Usage|
+|---|:-----:|
+|D1|Relay|
+
+## WS2812B RGB Shield
+|Pin|Usage|
+|---|:-----:|
+|D2(*D4*)|Data (**note:** NodeMCU uses D4 for RGB control)|
+
+## Button shield
+|Pin|Usage|
+|---|:-----:|
+|D3|Button|
+
+## DHT Shield
+|Pin|Usage|
+|---|:-----:|
+|D4|Data|
+
+## OLED Shield
+|Pin|Usage|
+|---|:-----:|
+|D1|SCL|
+|D2|SDA|
+
+## Motor Shield
+|Pin|Usage|
+|---|:-----:|
+|D1|SCL|
+|D2|SDA|
+
+## BMP180
+|Pin|Usage|
+|---|:-----:|
+|D1|SCL|
+|D2|SDA|
+
+## Micro SD Card Shield
+|Pin|Usage|
+|---|:-----:|
+|D5|CLK|
+|D6|MISO|
+|D7|MOSI|
+|D8|CS|
 
 # Notes
 * default baud rate is 115200
